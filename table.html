@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <title>Document</title>
+    <style>
+       * {
+       margin: 0px;
+       padding: 0px;
+       box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+
+td {
+    border-bottom: 1px solid #ddd;
+}
+
+td, th {
+    font-size: 16px;
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Student Table</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Class</th>
+                    <th>Father's Name</th>
+                    <th>Action</th>
+                    
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td id="n1">Ram Verma</td>
+                    <td>11th</td>
+                    <td>Shyam Verma</td>
+                    <td><i class="fas fa-edit"></i> <i class="fa fa-trash" aria-hidden="true" id="del"></i> <input type="submit" value="Set Style"></td>
+                </tr>
+                <tr>
+                    <td id="n2">Pinky Tiwari</td>
+                    <td>11th</td>
+                    <td>Anoop Tiwari</td>
+                    <td><i class="fas fa-edit"></i> <i class="fa fa-trash" aria-hidden="true" id="del1"></i> <input type="submit" value="Set Style"></td>
+                </tr>
+                <tr>
+                    <td>Naini Gupta</td>
+                    <td>11th</td>
+                    <td>Rakesh Gupta</td>
+                    <td><i class="fas fa-edit"></i> <i class="fa fa-trash" aria-hidden="true"></i> <input type="submit" value="Set Style"></td>
+                </tr>
+                
+            </tbody>
+        </table>
+    </div>
+    <script src="jQuery.js"></script> 
+    <script>
+        $(document).ready(function(){
+           $("#del").click(function(){
+             $("#n1").empty();
+           })
+           $("#del1").click(function(){
+             $("#n2").empty();
+           })  
+        })
+    </script>
+</body>
+
+</html>

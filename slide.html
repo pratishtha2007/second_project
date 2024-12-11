@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1{
+            height:200px;
+            width:200px;
+            border:2px solid #000;
+            background:skyblue ;
+        }
+        
+        
+        .btn{
+           height: 300px;
+           margin:auto 30px; 
+           width:870px;
+            
+        }
+    </style>
+</head>
+<body>
+    <input type="submit" value="Slideup" id="Slideup" >
+    <input type="submit" value="Slidedown" id="Slidedown" >
+    <input type="submit" value="Slidetoggle" id="Slidetoggle" >
+    <input type="submit" value="Slidestop" id="Slidestop" >
+    <input type="submit" value="addcss" id="addcss" >
+    <div class="box1"></div>
+
+    
+    <script src="jQuery.js"></script>
+    <script>
+        $(document).ready(function(){
+          $("#Slideup").click(function(){
+            $(".box1").slideUp();
+          })
+          $("#Slidedown").click(function(){
+            $(".box1").slideDown();
+          }) 
+          $("#Slidetoggle").click(function(){
+            $(".box1").slideToggle(5000);
+          }) 
+          $("#Slidestop").click(function(){
+            $(".box1").stop();
+          })
+          $("#addcss").click(function(){
+            // $(".box1").css("background","red");
+            $(".box1").css({"background":"yellow","boxShadow":"2px 2px 2px 2px #000"});
+          })
+        })
+    </script>
+</body>
+
+</html>

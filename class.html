@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+          .div{
+            height:200px;
+            width:200px;
+            border:2px solid #000;
+            background: #E195AB;
+            font-size:15px;
+        }
+        .active{
+            height:400px;
+            width:400px;
+            border:2px solid #000;
+            background: #997C70;
+            font-size:20px;
+            color:antiquewhite;
+        }
+    </style>
+</head>
+<body>
+    <div class="div">
+        <p>Techsima</p>
+        <p>Solution</p>
+        <p>Private</p>
+        <p>Limited</p>
+    </div>
+    <input type="submit" value="Add" id="btn1">
+    <input type="submit" value="Remove" id="btn2">
+    <input type="submit" value="Toggle" id="btn3">
+    <script src="jQuery.js"></script> 
+    <script>
+        $(document).ready(function(){
+            $("#btn1").click(function(){
+                $(".div").addClass("active");
+            })
+            $("#btn2").click(function(){
+                $(".div").removeClass("active");
+            })
+            $("#btn3").click(function(){
+                $(".div").toggleClass("active");
+            })
+        })
+    </script>
+</body>
+
+</html>
