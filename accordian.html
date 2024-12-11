@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+          .img{
+            height: 51px;
+            width: 60px;
+            position: absolute;
+            top: 0px;
+            right: -1px;
+          }
+          #im, #im1, #im2, #im3, #im4, #im5, #im6, #im7, #im8, #im9{
+            position: absolute;
+            top: 12px;
+            right: 18px;
+            height: 25px
+          }
+          .box1, .box3, .box5, .box7, .box9, .box11, .box13, .box15, .box17, .box19{
+            height: 51px;
+            width: 463px;
+            border:2px solid #000;
+            position:relative;
+            margin:auto;
+            background: #B1F0F7;
+            margin-bottom: 2px;
+          }
+          .box2, .box4, .box6, .box8, .box10, .box12, .box14, .box16, .box18, .box20{
+            height: 51px;
+            width: 463px;
+            display: none;
+            margin:auto;
+            border:2px solid #000;
+            background: #B1F0F7;
+            border-radius: 0px 0px 10px 10px;
+            margin-bottom: 5px;
+          }
+    </style>
+</head>
+<body>
+    <div class="box1">
+        <p><b>Where is the class located?</b></p>
+        <div class="img"><img src="Images/down.png" id="im"></div>
+    </div>
+    <div class="box2">
+      <p>Darshan Nagar In front of Rajarshi Dashrath Rajkiya Medical College, Kushmaha</p>
+    </div>
+
+    <div class="box3">
+      <p><b>Where is the class located?</b></p>
+      <div class="img"><img src="Images/down.png" id="im1"></div>
+  </div>
+  <div class="box4">
+    <p>Darshan Nagar In front of Rajarshi Dashrath Rajkiya Medical College, Kushmaha</p>
+  </div>
+
+  <div class="box5">
+    <p><b>Where is the class located?</b></p>
+    <div class="img"><img src="Images/down.png" id="im2"></div>
+</div>
+<div class="box6">
+  <p>Darshan Nagar In front of Rajarshi Dashrath Rajkiya Medical College, Kushmaha</p>
+</div>
+
+<div class="box7">
+  <p><b>Where is the class located?</b></p>
+  <div class="img"><img src="Images/down.png" id="im3"></div>
+</div>
+<div class="box8">
+<p>Darshan Nagar In front of Rajarshi Dashrath Rajkiya Medical College, Kushmaha</p>
+</div>
+
+<div class="box9">
+  <p><b>Where is the class located?</b></p>
+  <div class="img"><img src="Images/down.png" id="im4"></div>
+</div>
+<div class="box10">
+<p>Darshan Nagar In front of Rajarshi Dashrath Rajkiya Medical College, Kushmaha</p>
+</div>
+
+<div class="box11">
+  <p><b>Where is the class located?</b></p>
+  <div class="img"><img src="Images/down.png" id="im5"></div>
+</div>
+<div class="box12">
+<p>Darshan Nagar In front of Rajarshi Dashrath Rajkiya Medical College, Kushmaha</p>
+</div>
+
+<div class="box13">
+  <p><b>Where is the class located?</b></p>
+  <div class="img"><img src="Images/down.png" id="im6"></div>
+</div>
+<div class="box14">
+<p>Darshan Nagar In front of Rajarshi Dashrath Rajkiya Medical College, Kushmaha</p>
+</div>
+
+<div class="box15">
+  <p><b>Where is the class located?</b></p>
+  <div class="img"><img src="Images/down.png" id="im7"></div>
+</div>
+<div class="box16">
+<p>Darshan Nagar In front of Rajarshi Dashrath Rajkiya Medical College, Kushmaha</p>
+</div>
+
+<div class="box17">
+  <p><b>Where is the class located?</b></p>
+  <div class="img"><img src="Images/down.png" id="im8"></div>
+</div>
+<div class="box18">
+<p>Darshan Nagar In front of Rajarshi Dashrath Rajkiya Medical College, Kushmaha</p>
+</div>
+
+<div class="box19">
+  <p><b>Where is the class located?</b></p>
+  <div class="img"><img src="Images/down.png" id="im9"></div>
+</div>
+<div class="box20 ">
+<p>Darshan Nagar In front of Rajarshi Dashrath Rajkiya Medical College, Kushmaha</p>
+</div>
+     <script src="jQuery.js"></script> 
+    <script>
+        $(document).ready(function(){
+           $("#im").click(function(){
+            $(".box2").slideDown();
+            $(".box2").css({"display":"block"});
+            $(".box4").slideUp();
+            $(".box6").slideUp();
+            $(".box8").slideUp();
+            $(".box10").slideUp();
+            $(".box12").slideUp();
+           }) 
+        })
+
+        $(document).ready(function(){
+           $("#im1").click(function(){
+            $(".box4").slideDown();
+            $(".box4").css({"display":"block"});
+            $(".box2").slideUp();
+            $(".box6").slideUp();
+            $(".box8").slideUp();
+            $(".box10").slideUp();
+            $(".box12").slideUp();
+           }) 
+        })
+        $(document).ready(function(){
+           $("#im2").click(function(){
+            $(".box6").slideDown();
+            $(".box6").css({"display":"block"});
+            $(".box2").slideUp();
+            $(".box4").slideUp();
+            $(".box8").slideUp();
+            $(".box10").slideUp();
+            $(".box12").slideUp();
+            $(".box14").slideUp();
+           })
+          }) 
+           $(document).ready(function(){
+           $("#im3").click(function(){
+            $(".box8").slideDown();
+            $(".box8").css({"display":"block"});
+            $(".box2").slideUp();
+            $(".box4").slideUp();
+            $(".box6").slideUp();
+            $(".box10").slideUp();
+            $(".box12").slideUp();
+            $(".box14").slideUp();
+           }) 
+        })
+        $(document).ready(function(){
+           $("#im4").click(function(){
+            $(".box10").slideDown();
+            $(".box10").css({"display":"block"});
+            $(".box2").slideUp();
+            $(".box4").slideUp();
+            $(".box6").slideUp();
+            $(".box8").slideUp();
+            $(".box12").slideUp();
+            $(".box14").slideUp();
+           }) 
+        })
+         $(document).ready(function(){
+            $("#im5").click(function(){
+             $(".box12").slideDown();
+             $(".box12").css({"display":"block"});
+             $(".box2").slideUp();
+             $(".box4").slideUp();
+             $(".box6").slideUp();
+             $(".box8").slideUp();
+             $(".box10").slideUp();
+             $(".box14").slideUp();
+            }) 
+         })
+         $(document).ready(function(){
+            $("#im6").click(function(){
+             $(".box14").slideDown();
+             $(".box14").css({"display":"block"});
+             $(".box2").slideUp();
+             $(".box4").slideUp();
+             $(".box6").slideUp();
+             $(".box8").slideUp();
+             $(".box10").slideUp();
+             $(".box12").slideUp();
+             $(".box14").slideUp();
+            }) 
+         })
+          $(document).ready(function(){
+            $("#im7").click(function(){
+             $(".box16").slideDown();
+             $(".box16").css({"display":"block"});
+             $(".box2").slideUp();
+             $(".box4").slideUp();
+             $(".box6").slideUp();
+             $(".box8").slideUp();
+             $(".box10").slideUp();
+             $(".box12").slideUp();
+             $(".box14").slideUp();
+             $(".box18").slideUp();
+            }) 
+         })
+         $(document).ready(function(){
+            $("#im8").click(function(){
+             $(".box18").slideDown();
+             $(".box18").css({"display":"block"});
+             $(".box2").slideUp();
+             $(".box4").slideUp();
+             $(".box6").slideUp();
+             $(".box8").slideUp();
+             $(".box10").slideUp();
+             $(".box12").slideUp();
+             $(".box14").slideUp();
+             $(".box16").slideUp();
+            }) 
+         })
+        // $(document).ready(function(){
+        //    $("#im4").click(function(){
+        //     $(".box20").slideDown();
+        //     $(".box20").css({"display":"block"});
+        //     $(".box2").slideUp();
+        //     $(".box4").slideUp();
+        //     $(".box6").slideUp();
+        //     $(".box8").slideUp();
+        //     $(".box10").slideUp();
+        //     $(".box12").slideUp();
+        //     $(".box14").slideUp();
+        //     $(".box16").slideUp();
+        //     $(".box18").slideUp();
+        //    }) 
+        // })
+    </script>
+</body>
+
+</html>

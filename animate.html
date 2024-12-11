@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         #div{
+            height:200px;
+            width:200px;
+            border:2px solid #000;
+            background: #E195AB;
+            position: relative;
+            top:0px;
+            left:0px;
+        }
+        #btn{
+            position: absolute;
+            top:0px;
+            left:0px;
+        }
+    </style>
+</head>
+<body>
+    <div id="div"></div>
+    <input type="submit" value="animate" id="btn">
+     <script src="jQuery.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#btn").click(function(){
+               let d= $("#div");
+                d.animate({
+                    left:"80%",
+                    height:"100px"
+                    
+
+                },2000)
+                d.animate({
+                left:"0%",
+                    height:"200px",
+                    width:"300px"
+                    
+
+                }) 
+            })
+        })
+    </script>
+</body>
+
+</html>

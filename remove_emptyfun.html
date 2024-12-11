@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         .remove{
+            height:200px;
+            width:200px;
+            border:2px solid #000;
+            background: #E195AB;
+        }
+    </style>
+</head>
+<body>
+    <div class="remove">
+        <p>Techsima</p>
+        <p>Solution</p>
+        <p>Private</p>
+        <p>Limited</p>
+    </div>
+    <input type="submit" value="remove" id="remove">
+    <input type="submit" value="empty" id="empty">
+     <script src="jQuery.js"></script> 
+    <script>
+        $(document).ready(function(){
+            $("#remove").click(function(){
+                $(".remove").remove();
+            })
+            $("#empty").click(function(){
+                $(".remove").empty();
+            })
+        })
+    </script> 
+</body>
+
+</html>

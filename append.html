@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .append{
+            height:200px;
+            width:200px;
+            border:2px solid #000;
+            background: #E195AB;
+        }
+        .after{
+            height:200px;
+            width:200px;
+            border:2px solid #000;
+            background: #E195AB;
+        }
+    </style>
+</head>
+<body>
+    <div class="append">
+        <p>Techsima</p>
+        <p>Solution</p>
+        <p>Private</p>
+        <p>Limited</p>
+    </div>
+    <input type="submit" value="Append" id="btn1">
+    <input type="submit" value="Prepend" id="btn2">
+    <div class="after">
+         <ul>
+            <li>Ram</li>
+            <li>Ram</li>
+            <li>Ram</li>
+            <li>Ram</li>
+         </ul>
+    </div>
+    <input type="submit" value="After" id="btn3">
+    <input type="submit" value="Before" id="btn4">
+    <script src="jQuery.js"></script> 
+    <script>
+        $(document).ready(function(){
+          $("#btn1").contextmenu(function(){
+            $("p").append("Hello Techsima!");
+          })
+          $("#btn2").click(function(){
+            $("p").prepend("Hello Techsima!");
+          })
+          $("#btn3").click(function(){
+            $("ul").after("Hello Techsima!");
+          })
+          $("#btn4").click(function(){
+            $("ul").before("Hello Techsima!");
+          })
+          
+        })
+    </script>
+</body>
+
+</html>
